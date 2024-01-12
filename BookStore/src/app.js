@@ -35,10 +35,8 @@ server.use((req, res, next) => {
 server.set('view engine', 'ejs');
 server.use('/', routes);
 
-//Hola que hace, salvemos el deploy
 
 server.use(express.static(path.resolve("src/handlers/Stripe/Templates-Prueba")));
-
 
 
 server.use((err, req, res, next) => {
