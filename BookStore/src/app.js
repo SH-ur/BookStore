@@ -16,7 +16,9 @@ server.use(express.json({ limit: '50mb' }));
 server.use(morgan('dev'));
 server.use(cookieParser());
 
-server.use(cors({ origin: 'https://book-store-client-9ppbtf3vn-sh-urs-projects.vercel.app' }));
+
+server.use(cors({ origin: 'https://book-store-client-ez7diu9jw-sh-urs-projects.vercel.app/' }));
+
 server.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', "*");
   res.header('Access-Control-Allow-Credentials', 'true');
